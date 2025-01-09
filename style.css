@@ -1,0 +1,224 @@
+/* Basic styles */
+body {
+    width: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+  }
+  
+  *, *::before, *::after {
+    box-sizing: inherit;
+  }
+  
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw; /* Use vw to ensure it accounts for the scrollbar */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: transparent;
+    transition: background-color 0.3s ease, padding 0.3s ease;
+    z-index: 1000;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+  
+  header.scrolled {
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 10px 60px;
+    
+  }
+
+  header nav ul li a.scrolled {
+    text-decoration: none;
+    color: black;
+  }
+ 
+  header .logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  .logo img{
+    width: 130px;
+  }
+  
+  header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    font-size: 16px;
+  }
+  
+  header nav ul li {
+    margin: 0 10px;
+  }
+  
+  header nav ul li a {
+    text-decoration: none;
+    color: #0d094b;
+    margin-right: 10px;
+  }
+  
+  .chat-now {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background-color: #f97979;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .hero{
+    padding-top: 30px;
+    width: 100%;
+    height: 90vh;
+    background: url('assets/bg/SVG/Asset.svg');
+}
+.hero-div{
+    width: 100%;
+    height: 100%;
+    display: flex;     
+    align-items: center; 
+    padding-left: 60px;
+    padding-right: 0px;
+}
+
+.hero-img{
+    width: 50%;
+}
+.hero-img img{
+    width: 500px;
+}
+
+.hero-content{
+    width: 50%;
+    padding-top: 20px;
+}
+.hero-heading{
+    font-size: 46px;
+    font-weight: 600;
+    color: #624e94;
+}
+
+.whatsapp-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background-color: #ff8686;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    margin-top: 15px;
+    width: 30%;
+}
+
+.whatsapp-button i {
+    font-size: 20px;
+}
+
+.whatsapp-button:hover {
+    background-color: #1da955;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+}
+  
+
+.why-vedicmom{
+  padding-top: 50px;
+  width: 100%;
+  height: 100vh;
+}
+.why-vedicmom-heading{
+  text-align: center;
+  font-size: 30px;
+  font-weight: 600;
+  color: #313131;
+}
+.why-vedicmom-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 10px;
+}
+
+.why-row {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  margin-right: 10px;
+}
+
+.why-box {
+  width: 400px;
+  height: 180px;
+  background: white;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 10px;
+  color: #2b2857;
+}
+
+.why-card1 {
+  background-color: #ffd8d8;
+}
+
+.why-card2 {
+  background-color: #ffeed0;
+}
+
+.why-card3 {
+  background-color: #f0dbff;
+}
+
+.why-card4 {
+  background-color: #ddffe2;
+}
+
+.why-number {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.why-content h3 {
+  margin: 10px 0 5px 0;
+  font-size: 18px;
+}
+
+.why-content p {
+  font-size: 16px;
+}
+
+.why-center-image {
+  grid-column: span 2;
+  display: flex;
+  justify-content: center;
+}
+
+.why-center-image img {
+  width: 250px;
+  height: auto;
+}
